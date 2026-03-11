@@ -78,6 +78,13 @@ A full grid over k ∈ {0.2–0.9} × h ∈ {2.0–6.0} showing detection delay 
 Prints a boxed summary table with all key metrics and five numbered research insights explaining what the simulation teaches about the method.
 
 
+** Results ** 
+
+
+<img width="1620" height="900" alt="Fig1_Risk_Score_Distribution" src="https://github.com/user-attachments/assets/bd906929-beed-4e4d-a246-3392ec75518f" />
+
+
+
 
 
 
