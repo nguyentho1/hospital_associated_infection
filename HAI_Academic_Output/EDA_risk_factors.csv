@@ -1,0 +1,9 @@
+"factor","rate_present","rate_absent","crude_OR"
+"icu_admit",55.22,33.89,2.41
+"surgery",46.4,35.02,1.61
+"immunocomp",60,35.69,2.7
+"antibiotics",42.72,35.77,1.34
+"central_line",51.14,34.45,1.99
+"urinary_cath",47.65,34.92,1.7
+"comorbidity",45.57,31.98,1.78
+"diabetes",44.48,37.26,1.35
