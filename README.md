@@ -19,17 +19,21 @@ Despite the theoretical appeal of this hybrid approach, no prospective multi-sit
 **Methods** 
 
 *Study Design and Setting*
+
 This study employs a prospective, observational, multi-site comparative surveillance design. Three tertiary teaching hospitals (combined capacity: approximately 1,800 beds, approximately 45,000 admissions per year) will participate. Each hospital contributes two to three wards selected to represent a range of acuity levels: medical intensive care, general surgery, oncology, general medicine, and orthopaedics. Data collection proceeds in two phases: a retrospective model training phase (months 1–12, using three years of historical EHR data) and a prospective surveillance phase (months 13–24).
 
 *Data Sources and Variables*
+
 Predictor variables will be extracted from the hospital EHR at admission and updated daily. Core predictors include patient age, sex, body mass index, length of stay, Charlson Comorbidity Index score, admission diagnosis ICD-10 code group, ICU admission status, surgical procedure (yes/no, type), presence and duration of central venous catheter, urinary catheter, and mechanical ventilation, immunosuppressive medication use, broad-spectrum antibiotic exposure (defined daily doses), and prior HAI history within 12 months.
 
 Outcomes will be defined per CDC/NHSN criteria: HAI is confirmed if a qualifying organism is isolated from a culture taken more than 48 hours after admission, meeting site-specific case definitions for CAUTI, CLABSI, SSI, CDI, or hospital-acquired pneumonia. Daily ward-level denominator data (device-days, patient-days) will be recorded for rate calculation.
 
 *Machine learning Model Development Pipeline*
+
 Three candidate models will be developed: regularised logistic regression with clinically motivated interaction terms (central line duration × immunosuppression; ICU admission × comorbidity score); a balanced Random Forest (sampsize set to equalise class proportions, mtry tuned by out-of-bag error); and XGBoost with scale_pos_weight = n_negative / n_positive to address the approximately 5–10% HAI prevalence. All models will be trained on the retrospective cohort using a temporal cross-validation scheme (training on years 1–2, validation on year 3) to prevent leakage of temporal trends. Model calibration will be assessed using isotonic regression via five-fold cross-validation. The final deployed score will be a weighted ensemble, with weights proportional to cross-validated AUC, updated quarterly during the prospective phase.
 
 *CUSUM Implementation*
+
 The CUSUM statistic will be computed at the ward level using the upward one-sided algorithm: Sₙ = max(0, Sₙ₋₁ + (Oᵢ − Eᵢ) − k), where Oᵢ is the observed binary infection outcome and Eᵢ is the ML ensemble score for patient i. An alert fires when Sₙ > h. The reference value k will be set as half the minimum detectable residual shift (δ/2), estimated empirically from historical outbreak records. The decision threshold h will be derived via parametric bootstrap simulation of 10,000 null sequences to achieve the target ARL₀. Ward-specific parameters will account for differences in patient volume and baseline risk. The CUSUM statistic will be reset to zero following each alert and after a formal clinical investigation is initiated.
 
 **Experiment Results**
