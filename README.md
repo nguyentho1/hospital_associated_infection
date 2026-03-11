@@ -78,10 +78,46 @@ A full grid over k ∈ {0.2–0.9} × h ∈ {2.0–6.0} showing detection delay 
 Prints a boxed summary table with all key metrics and five numbered research insights explaining what the simulation teaches about the method.
 
 
-** Results ** 
+**Results** 
 
 
 <img width="1620" height="900" alt="Fig1_Risk_Score_Distribution" src="https://github.com/user-attachments/assets/bd906929-beed-4e4d-a246-3392ec75518f" />
+
+
+
+
+<img width="1260" height="1080" alt="Fig2_ROC_Curves" src="https://github.com/user-attachments/assets/ccdff457-7a7a-42fb-a58f-c3887d0f7fa7" />
+
+
+
+<img width="1260" height="1080" alt="Fig3_Calibration_Plot" src="https://github.com/user-attachments/assets/b739c52f-120e-4bc1-bcac-86b7eed9107f" />
+
+
+
+<img width="1800" height="2520" alt="Fig4_Ward_CUSUM_Panels" src="https://github.com/user-attachments/assets/e4412d00-d22a-4f21-b752-70530a908f4a" />
+
+
+
+<img width="1980" height="900" alt="Fig5_Ward3_Residuals_CUSUM" src="https://github.com/user-attachments/assets/9bbf27e9-1295-45f1-ae52-ceb7884fb129" />
+
+
+
+<img width="1440" height="900" alt="Fig6_Variable_Importance" src="https://github.com/user-attachments/assets/dce51ea3-ab02-439a-b965-236abbb6f9ec" />
+
+
+<img width="1620" height="900" alt="Fig7a_Sensitivity_Delay" src="https://github.com/user-attachments/assets/78fd2749-e561-4a77-b65a-321d383230d5" />
+
+
+<img width="1620" height="900" alt="Fig7b_Sensitivity_FalseAlarms" src="https://github.com/user-attachments/assets/08be91ec-6f8e-4934-8dfb-86ef8b59333a" />
+
+
+
+
+
+
+
+
+
 
 
 
