@@ -36,23 +36,31 @@ The CUSUM statistic will be computed at the ward level using the upward one-side
 In order to have the data to learn and practice the combination of advanced techniques, I generated and simuluated the synthetic data.
 There are 8 main steps to conduct this method. 
 
-Section 0 — Environment Setup
+*Section 0 — Environment Setup*
 Sets set.seed(2024) to make all random draws reproducible, then installs and loads 7 packages in a loop. The character.only = TRUE argument in library() is needed because the package name is stored in a variable, not typed as a bare name.
-Section 1 — Data Simulation
+
+*Section 1 — Data Simulation*
 Generates 3,000 synthetic patients using a logistic model with 10 clinical risk factors drawn from the published HAI literature. The outbreak is injected as log(OR) added to the log-odds of Ward-3 patients starting at index 2,200 — this correctly multiplies the odds by exactly 3.0 without distorting the rest of the model.
-Section 2 — Explotary Data Analysis
+
+*Section 2 — Explotary Data Analysis*
 Computes HAI rates per ward and crude odds ratios per risk factor. This step is essential before modelling — it verifies the simulation behaves as intended.
-Section 3 — Machine learning Models
+
+*Section 3 — Machine learning Models*
 Trains Logistic Regression and Random Forest on patients 1–1,500. Critically, ward is deliberately excluded as a predictor — otherwise the model would absorb the outbreak signal instead of leaving it for CUSUM to detect. Platt scaling corrects probability overconfidence from the LR model.
-Section 4 — Model Evaluation
+
+*Section 4 — Model Evaluation*
 Measures discrimination (AUC), overall accuracy (Brier Score), and calibration (Hosmer-Lemeshow test + decile calibration table). Calibration is especially important here because CUSUM uses observed - predicted as its input signal.
-Section 5 — CUSUM Function
+
+*Section 5 — CUSUM Function*
 The run_cusum() function implements the Page (1954) formula with dual-direction monitoring (upward for outbreak detection, downward for quality improvement), configurable k/h parameters, and a reset-after-alert policy.
-Section 6 — 7 Publication-Quality Plots
+
+*Section 6 - Publication-Quality Plots*
 Risk distribution, ROC curves, calibration plot, per-ward CUSUM panels, Ward-3 residual stream, feature importance, and sensitivity heatmaps — all saved as PNG files.
-Section 7 — Sensitivity Analysis
+
+*Section 7 — Sensitivity Analysis*
 A full grid over k ∈ {0.2–0.9} × h ∈ {2.0–6.0} showing detection delay and false alarm count for every combination, saved as two heatmaps.
-Section 8 — Report
+
+*Section 8 — Report*
 Prints a boxed summary table with all key metrics and five numbered research insights explaining what the simulation teaches about the method.
 
 
