@@ -104,16 +104,26 @@ Prints a boxed summary table with all key metrics and five numbered research ins
 
 **Reference**
 
-[1]  Nguyễn Kiến Mậu, Tăng Kim Hồng. (2018). Tỷ suất mới mắc nhiễm khuẩn bệnh viện tại khoa Sơ sinh bệnh viện Nhi Đồng. Nghiên cứu Y học, 10 (3), tr. 67 – 71. 
-[2]  Nhiễm khuẩn bệnh viện làm tăng tỷ lệ mắc bệnh, nguy cơ tử vong, kéo dài ngày nằm viện [Truy cập: https://bvquan5.medinet.gov.vn/chuyen-muc/nhiem-khuan-benh-vien-lam-tang-ty-le-mac-benh-nguy-co-tu-vong-keo-dai-ngay-nam-cmobile14478-224747.aspx]
+[1]  Nguyễn Kiến Mậu, Tăng Kim Hồng. (2018). Tỷ suất mới mắc nhiễm khuẩn bệnh viện tại khoa Sơ sinh bệnh viện Nhi Đồng. Nghiên cứu Y học, 10 (3), tr. 67 – 71.
+
+[2]  Nhiễm khuẩn bệnh viện làm tăng tỷ lệ mắc bệnh, nguy cơ tử vong, kéo dài ngày nằm viện. [Truy cập: https://bvquan5.medinet.gov.vn/chuyen-muc/nhiem-khuan-benh-vien-lam-tang-ty-le-mac-benh-nguy-co-tu-vong-keo-dai-ngay-nam-cmobile14478-224747.aspx]
+
 [3] Thủ tướng: Chính phủ quyết tâm cải thiện tình trạng quá tải bệnh viện, chất lượng dịch vụ y tế gắn với cơ chế tiền lương. [Truy cập: https://medinet.gov.vn/tin-tuc-su-kien/thu-tuong-chinh-phu-quyet-tam-cai-thien-tinh-trang-qua-tai-benh-vien-chat-luong-cmobile1780-37838.aspx]
+
 [4] Quá tải tại một số bệnh viện tuyến Trung ương [Truy cập: https://nhandan.vn/qua-tai-tai-mot-so-benh-vien-tuyen-trung-uong-post707866.html]
+
 [5] Scott R II. The direct medical costs of healthcare-associated infections in U.S. hospitals and the benefits of prevention. Atlanta (GA): Centers for Disease Control and Prevention; 2009. [18 October 2016]. https://www.cdc.gov/HAI/pdfs/hai/Scott_CostPaper.pdf
+
 [6] Report on the state of communicable diseases in the EU and EEA/EFTA countries. Stockholm: European Centre for Disease Prevention and Control; 2008. [18 October 2016]. Annual epidemiological report on communicable diseases in Europe 2008. http://ecdc.europa.eu/en/publications/Publications/0812_SUR_Annual_Epidemiological_Report_2008.pdf.
+
 [7] World Health Organization. (2011). Report on the burden of endemic health care-associated infection worldwide.
+
 [8] Allegranzi, B., Nejad, S. B., Combescure, C., Graafmans, W., Attar, H., Donaldson, L., & Pittet, D. (2011). Burden of endemic health-care-associated infection in developing countries: systematic review and meta-analysis. The Lancet, 377(9761), 228-241.
+
 [9] Guideline, I. P. (2007). Guideline for Isolation Precautions: Preventing Transmission of Infectious Agents in Healthcare Settings (2007).
+
 [10] Poloniecki JD, et al. (1998). Cumulative risk adjusted mortality chart for detecting changes in death rate. BMJ, 316(7146), 1697–1700.
+
 [11]  Sherlaw-Johnson C. (2005). A method for detecting runs of good and bad clinical outcomes on variable life-adjusted display (VLAD) charts. Health Care Management Science, 8(1), 61–68.
 
 
